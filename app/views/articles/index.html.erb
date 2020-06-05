@@ -1,0 +1,26 @@
+<div class="page-content">
+    <div class="container container-fluid text-center">
+        <h1>Article Lists</h1>
+
+        <% if logged_in? %>
+          <%= link_to 'Create New Article', new_article_path, class: "btn btn-warning mt-4" %>
+        <% end %>
+    </div>
+
+    <!-- <%= will_paginate @articles %> -->
+    <div class="flickr_pagination">
+        <div class="page_info">
+          <%= page_entries_info @posts %>
+        </div>
+        <%= will_paginate @articles, :container => false %>
+    </div>
+    
+    <%= render 'article' %>
+
+    <div class="flickr_pagination">
+        <div class="page_info">
+          <%= page_entries_info @posts %>
+        </div>
+        <%= will_paginate @articles, :container => false %>
+    </div>
+</div>

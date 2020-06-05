@@ -1,0 +1,87 @@
+@import 'bootstrap/dist/css/bootstrap';
+
+.navbar{
+    background-color: black !important;
+}
+
+.nav-link{
+    color: whitesmoke !important;
+}
+
+#logo{
+    color: whitesmoke !important;
+    font-weight: bold;
+}
+
+#home-container{
+    margin-top: 2rem;
+}
+
+.jumbotron{
+    background-image: asset-url('jumbo-alphablog.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 425px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+}
+
+/* Other Classes for Page Styling */
+
+body {
+  background: whitesmoke !important;
+  background: linear-gradient(to right, #0062E6, #33AEFF);
+}
+
+.card{
+    box-shadow: 0 2px 4px 0;
+}
+
+.container{
+    padding: 2rem;
+}
+
+.flickr_pagination {
+  margin-bottom: 1rem;
+  text-align: center;
+  padding: 0.3em;
+  cursor: default; }
+.flickr_pagination a, .flickr_pagination span, .flickr_pagination em {
+  padding: 0.2em 0.5em; 
+  border-radius: .5rem;
+}
+.flickr_pagination .disabled {
+  color: #aaaaaa; }
+.flickr_pagination .current {
+  font-style: normal;
+  font-weight: bold;
+  color: #ff0084; }
+.flickr_pagination a {
+  border: 1px solid #dddddd;
+  color: #0063dc;
+  text-decoration: none; }
+  .flickr_pagination a:hover, .flickr_pagination a:focus {
+    border-color: #003366;
+    background: #0063dc;
+    color: white; }
+.flickr_pagination .page_info {
+  color: #aaaaaa;
+  padding-top: 0.8em; }
+.flickr_pagination .previous_page, .flickr_pagination .next_page {
+  border-width: 2px; }
+.flickr_pagination .previous_page {
+  margin-right: 1em; }
+.flickr_pagination .next_page {
+  margin-left: 1em; }

@@ -1,0 +1,21 @@
+<% if obj.errors.any? %>
+<div class="alert alert-danger" role="alert">
+    <h4 class="alert-heading">Error!
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </h4>
+    
+    <p>There are some errors when creating new <%= obj.class.name.downcase %> : </p>
+    <ul>
+        <% obj.errors.full_messages.each do |msg| %>
+            <li>
+                <%= msg %>
+            </li>
+        <% end %>    
+    </ul>
+    <hr>
+    <p class="mb-0">Please check and ensure all the requirements are fulfilled. </p>
+</div>
+<% end %>
+    
